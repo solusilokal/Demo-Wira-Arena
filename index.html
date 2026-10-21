@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Lapangan Futsal Terbaik di Palangka Raya | Wira Arena</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Booking lapangan futsal modern dan profesional di Palangka Raya. Fasilitas lengkap, rumput sintetis premium, harga terjangkau, dan cocok untuk turnamen atau member bulanan. Booking sekarang!">
+    <meta name="keywords" content="sewa lapangan futsal palangka raya, lapangan futsal palangkaraya, booking futsal palangka raya, lapangan futsal murah palangka raya, turnamen futsal palangka raya, fasilitas futsal lengkap">
+    <meta name="author" content="SolusiLokal">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.domainfutsalanda.com/">
+    <meta property="og:title" content="Arena Futsal Terbaik di Palangka Raya | Wira Arena">
+    <meta property="og:description" content="Tingkatkan permainanmu di arena futsal dengan fasilitas premium di Palangka Raya. Cek jadwal dan booking lapanganmu sekarang!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80">
+    <link rel="icon" type="image/webp" href="gambarasset/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0A192F',
+                        'navy-light': '#112240',
+                        royal: '#1D4ED8',
+                        electric: '#3B82F6',
+                        accent: '#10B981', // Sporty Green
+                        'accent-hover': '#059669',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS for Animations -->
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        
+        .image-zoom-container {
+            overflow: hidden;
+        }
+        .image-zoom-container img {
+            transition: transform 0.5s ease;
+        }
+        .image-zoom-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- Schema.org Markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Wira Arena",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+      "@id": "",
+      "url": "https://www.domainfutsalanda.com",
+      "telephone": "+6289529605601",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Utama Palangka Raya",
+        "addressLocality": "Palangka Raya",
+        "addressRegion": "Kalimantan Tengah",
+        "postalCode": "73111",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -2.2083,
+        "longitude": 113.9167
+      },
+      "priceRange": "Rp 100.000 - Rp 250.000"
+    }
+    </script>
+</head>
+<body class="font-sans text-slate-700 bg-slate-50 antialiased overflow-x-hidden">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy/95 backdrop-blur-md shadow-lg py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <!-- Gunakan tag IMG sesuai instruksi, bukan vector -->
+                        <img src="gambarasset/WIRA Arena Futsal Crest.webp" alt="Logo Wira Arena" class="w-10 h-10 rounded object-cover">
+                        <span class="text-white font-display font-bold text-xl tracking-wide uppercase">Wira Arena</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#profil" class="text-white hover:text-accent transition-colors font-medium text-sm uppercase tracking-wider">Profil</a>
+                    <a href="#fasilitas" class="text-white hover:text-accent transition-colors font-medium text-sm uppercase tracking-wider">Fasilitas</a>
+                    <a href="#harga" class="text-white hover:text-accent transition-colors font-medium text-sm uppercase tracking-wider">Harga & Jadwal</a>
+                    <a href="#faq" class="text-white hover:text-accent transition-colors font-medium text-sm uppercase tracking-wider">FAQ</a>
+                    <a href="https://wa.me/6289529605601" target="_blank" class="bg-accent hover:bg-accent-hover text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(16,185,129,0.4)]">
+                        Booking Lapangan
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-accent focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-light absolute w-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#profil" class="block px-3 py-2 text-white hover:bg-royal rounded-md font-medium">Profil</a>
+                <a href="#fasilitas" class="block px-3 py-2 text-white hover:bg-royal rounded-md font-medium">Fasilitas</a>
+                <a href="#harga" class="block px-3 py-2 text-white hover:bg-royal rounded-md font-medium">Harga & Jadwal</a>
+                <a href="#faq" class="block px-3 py-2 text-white hover:bg-royal rounded-md font-medium">FAQ</a>
+                <a href="https://wa.me/6289529605601" target="_blank" class="block px-3 py-2 text-accent font-bold">Booking Lapangan</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="gambarasset/hero.webp" alt="Lapangan Futsal Modern" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl reveal">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-electric/20 border border-electric/50 text-blue-200 font-semibold text-sm mb-6 backdrop-blur-sm">
+                    <i class="fas fa-bolt text-accent mr-2"></i> Arena Futsal Terbaik di Palangka Raya
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-6 uppercase tracking-tight">
+                    Tingkatkan <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-electric">Permainanmu</span> ke Level Selanjutnya
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+                    Rasakan sensasi bermain di fasilitas berstandar profesional. Lapangan terawat, rumput sintetis premium, dan atmosfer pertandingan yang kompetitif. Kumpulkan timmu dan jadilah juara!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6289529605601" target="_blank" class="bg-accent hover:bg-accent-hover text-white text-center px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(16,185,129,0.3)] flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Booking Lapangan
+                    </a>
+                    <a href="#harga" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white text-center border border-white/30 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="far fa-calendar-alt"></i> Cek Jadwal
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center gap-6 text-sm text-gray-400 font-medium">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i> Buka Setiap Hari
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i> Fasilitas Lengkap
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-accent"></i> Area Parkir Luas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-electric font-bold tracking-wider uppercase text-sm mb-2">Profil Usaha</h2>
+                <h3 class="font-display text-4xl font-bold text-navy mb-4 uppercase">Kenapa Bermain di Wira Arena?</h3>
+                <p class="text-slate-600 text-lg">Kami bukan sekadar menyewakan lapangan. Kami memberikan pengalaman bermain futsal layaknya atlet profesional dengan fasilitas terawat dan layanan terbaik di Palangka Raya.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- USP 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-electric/30 hover:shadow-xl transition-all group reveal delay-100">
+                    <div class="w-14 h-14 bg-electric/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric group-hover:text-white transition-colors text-electric">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Kondisi Terawat</h4>
+                    <p class="text-slate-600">Rumput sintetis premium yang rutin dibersihkan dan disisir, menjamin keamanan dan kenyamanan manuver Anda.</p>
+                </div>
+                <!-- USP 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-electric/30 hover:shadow-xl transition-all group reveal delay-200">
+                    <div class="w-14 h-14 bg-electric/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric group-hover:text-white transition-colors text-electric">
+                        <i class="fas fa-shower text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Fasilitas Lengkap</h4>
+                    <p class="text-slate-600">Mulai dari ruang ganti, shower bersih, loker aman, hingga tribun penonton yang nyaman tersedia untuk Anda.</p>
+                </div>
+                <!-- USP 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-electric/30 hover:shadow-xl transition-all group reveal delay-300">
+                    <div class="w-14 h-14 bg-electric/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric group-hover:text-white transition-colors text-electric">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Akses Mudah</h4>
+                    <p class="text-slate-600">Lokasi strategis di pusat Palangka Raya. Mudah dijangkau dengan area parkir motor dan mobil yang luas & aman.</p>
+                </div>
+                <!-- USP 4 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-electric/30 hover:shadow-xl transition-all group reveal delay-400">
+                    <div class="w-14 h-14 bg-electric/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric group-hover:text-white transition-colors text-electric">
+                        <i class="fas fa-handshake text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Booking Transparan</h4>
+                    <p class="text-slate-600">Proses booking mudah via WhatsApp. Harga transparan tanpa biaya tersembunyi, sangat cocok untuk komunitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fasilitas" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Fasilitas Utama (5 Slot) -->
+            <div class="mb-16">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-8 reveal">
+                    <div>
+                        <h2 class="text-electric font-bold tracking-wider uppercase text-sm mb-2">Venue Kami</h2>
+                        <h3 class="font-display text-3xl md:text-4xl font-bold text-navy uppercase">Fasilitas Utama</h3>
+                    </div>
+                    <p class="text-slate-500 mt-4 md:mt-0 max-w-md text-right hidden md:block">Area bermain berstandar tinggi yang menunjang performa tim Anda di lapangan.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                    <!-- Lapangan Full (Besar) -->
+                    <div class="md:col-span-2 md:row-span-2 rounded-2xl image-zoom-container relative reveal">
+                        <img src="gambarasset/fasilitas1.webp" alt="Lapangan Futsal Utama" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                            <h4 class="font-bold text-xl">Lapangan Rumput Sintetis Premium</h4>
+                        </div>
+                    </div>
+                    <!-- Area Bermain -->
+                    <div class="md:col-span-2 rounded-2xl image-zoom-container relative reveal delay-100">
+                        <img src="gambarasset/fasilitas2.webp" alt="Area Bermain" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                            <h4 class="font-bold">Area Bermain Luas & Aman</h4>
+                        </div>
+                    </div>
+                    <!-- Tribun -->
+                    <div class="rounded-2xl image-zoom-container relative reveal delay-200">
+                        <img src="gambarasset/fasilitas3.webp" alt="Tribun Penonton" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                            <h4 class="font-bold text-sm">Tribun Penonton</h4>
+                        </div>
+                    </div>
+                    <!-- Ruang Tunggu -->
+                    <div class="rounded-2xl image-zoom-container relative reveal delay-300">
+                        <img src="gambarasset/fasilitas4.webp" alt="Keseluruhan Venue" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
+                            <h4 class="font-bold text-sm">Ruang Tunggu Nyaman</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fasilitas Pendukung (4 Slot) -->
+            <div class="mb-16">
+                <h3 class="font-display text-2xl font-bold text-navy uppercase mb-6 reveal">Fasilitas Pendukung</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center reveal">
+                        <img src="gambarasset/fasilitas5.webp" alt="Bola Futsal" class="w-full h-32 object-cover rounded-lg mb-3">
+                        <p class="font-semibold text-navy">Bola Berkualitas</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center reveal delay-100">
+                        <img src="gambarasset/fasilitas6.webp" alt="Scoreboard" class="w-full h-32 object-cover rounded-lg mb-3">
+                        <p class="font-semibold text-navy">Scoreboard Digital</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center reveal delay-200">
+                        <img src="gambarasset/fasilitas7.webp" alt="Locker & Shower" class="w-full h-32 object-cover rounded-lg mb-3">
+                        <p class="font-semibold text-navy">Locker & Shower Bersih</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center reveal delay-300">
+                        <img src="gambarasset/fasilitas8.webp" alt="Kantin Olahraga" class="w-full h-32 object-cover rounded-lg mb-3">
+                        <p class="font-semibold text-navy">Kantin & Minuman Dingin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atmosfer & Komunitas -->
+            <div>
+                <h3 class="font-display text-2xl font-bold text-navy uppercase mb-6 text-center md:text-left reveal">Atmosfer Pertandingan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="rounded-2xl image-zoom-container relative aspect-square reveal">
+                        <img src="gambarasset/aktivitas1.webp" alt="Aktivitas Pemain" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-navy/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span class="text-white font-bold text-lg border-2 border-white px-4 py-2 rounded">Aksi Lapangan</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl image-zoom-container relative aspect-square reveal delay-100">
+                        <img src="gambarasset/aktivitas2.webp" alt="Komunitas Futsal" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-navy/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span class="text-white font-bold text-lg border-2 border-white px-4 py-2 rounded">Kebersamaan Tim</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl image-zoom-container relative aspect-square reveal delay-200">
+                        <img src="gambarasset/aktivitas3.webp" alt="Turnamen Futsal" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-navy/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                            <span class="text-white font-bold text-lg border-2 border-white px-4 py-2 rounded">Event & Turnamen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class="py-20 bg-navy text-white relative">
+        <!-- Abstract Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-electric/20 rounded-full filter blur-[100px]"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-royal/30 rounded-full filter blur-[120px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-accent font-bold tracking-wider uppercase text-sm mb-2">Investasi Tim Anda</h2>
+                <h3 class="font-display text-4xl font-bold mb-4 uppercase">Daftar Harga & Paket</h3>
+                <p class="text-gray-300 text-lg">Pilih paket bermain yang sesuai dengan kebutuhan Anda. Kami menyediakan fleksibilitas mulai dari sewa per jam hingga paket langganan bulanan untuk komunitas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket Reguler (Pagi-Sore) -->
+                <div class="bg-navy-light rounded-2xl p-8 border border-white/10 hover:border-accent transition-all reveal">
+                    <h4 class="text-xl font-bold mb-2">Reguler (Siang)</h4>
+                    <p class="text-gray-400 text-sm mb-6">Pukul 08:00 - 15:00 WIB</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-3xl font-display font-bold">Rp 120.000</span>
+                        <span class="text-gray-400">/ jam</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Lapangan full fasilitas</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Pinjam 1 Bola Futsal</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Rompi (Tergantung ketersediaan)</li>
+                    </ul>
+                    <a href="https://wa.me/6289529605601?text=Halo%20Admin,%20saya%20mau%20booking%20lapangan%20Reguler%20Siang" target="_blank" class="block w-full py-3 px-4 bg-white/10 hover:bg-white/20 text-center rounded-lg font-bold transition-colors">Pilih Paket</a>
+                </div>
+
+                <!-- Paket Prime Time -->
+                <div class="bg-gradient-to-b from-royal to-navy-light rounded-2xl p-8 border border-electric shadow-[0_0_30px_rgba(59,130,246,0.2)] transform md:-translate-y-4 relative reveal delay-100">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase">Terpopuler</div>
+                    <h4 class="text-xl font-bold mb-2">Prime Time (Malam)</h4>
+                    <p class="text-blue-200 text-sm mb-6">Pukul 15:00 - 23:00 WIB</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-display font-bold">Rp 170.000</span>
+                        <span class="text-blue-200">/ jam</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Penerangan LED Maksimal</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Pinjam 2 Bola Futsal</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Gratis Pinjam Rompi 1 Set</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Gratis 1 Galon Air Minum</li>
+                    </ul>
+                    <a href="https://wa.me/6289529605601?text=Halo%20Admin,%20saya%20mau%20booking%20lapangan%20Prime%20Time" target="_blank" class="block w-full py-3 px-4 bg-accent hover:bg-accent-hover text-white text-center rounded-lg font-bold transition-colors shadow-lg">Booking Sekarang</a>
+                </div>
+
+                <!-- Paket Member -->
+                <div class="bg-navy-light rounded-2xl p-8 border border-white/10 hover:border-accent transition-all reveal delay-200">
+                    <h4 class="text-xl font-bold mb-2">Paket Member</h4>
+                    <p class="text-gray-400 text-sm mb-6">Langganan 4x Main / Bulan</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-xl font-display font-bold text-accent">Diskon Spesial</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Prioritas Jadwal Tetap</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Harga Lebih Hemat</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Full Fasilitas + Rompi</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-accent"></i> Cocok untuk Komunitas/Kantor</li>
+                    </ul>
+                    <a href="https://wa.me/6289529605601?text=Halo%20Admin,%20saya%20tertarik%20dengan%20Paket%20Member%20Bulanan" target="_blank" class="block w-full py-3 px-4 bg-white/10 hover:bg-white/20 text-center rounded-lg font-bold transition-colors">Tanya Harga Member</a>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-400 text-sm mt-8 reveal">*Harga dapat berubah sewaktu-waktu. Hubungi admin untuk harga khusus turnamen atau acara sekolah.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                
+                <!-- Cara Booking -->
+                <div class="reveal">
+                    <h2 class="font-display text-3xl font-bold text-navy uppercase mb-8">Cara Mudah Booking Lapangan</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-navy mb-1">Cek Ketersediaan Jadwal</h4>
+                                <p class="text-slate-600">Hubungi admin kami via WhatsApp untuk menanyakan jadwal lapangan yang kosong di hari dan jam yang Anda inginkan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-navy mb-1">Konfirmasi & DP</h4>
+                                <p class="text-slate-600">Setelah jadwal fix, lakukan pembayaran DP (Down Payment) minimal 50% untuk mengamankan slot Anda.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-navy mb-1">Datang Tepat Waktu</h4>
+                                <p class="text-slate-600">Datanglah 15 menit sebelum jadwal main dimulai. Pelunasan dapat dilakukan di kasir sebelum bermain.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg"><i class="fas fa-futbol"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold text-navy mb-1">Enjoy The Game!</h4>
+                                <p class="text-slate-600">Bermainlah dengan sportif dan nikmati fasilitas terbaik dari kami.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Operasional & Ketentuan -->
+                <div class="reveal delay-200">
+                    <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm mb-6">
+                        <h3 class="font-display text-2xl font-bold text-navy uppercase mb-6 flex items-center gap-3">
+                            <i class="far fa-clock text-electric"></i> Jam Operasional
+                        </h3>
+                        <ul class="space-y-3 text-slate-700 font-medium">
+                            <li class="flex justify-between border-b border-slate-200 pb-2">
+                                <span>Senin - Jumat</span>
+                                <span class="text-navy font-bold">08:00 - 23:00 WIB</span>
+                            </li>
+                            <li class="flex justify-between border-b border-slate-200 pb-2">
+                                <span>Sabtu - Minggu</span>
+                                <span class="text-navy font-bold">07:00 - 24:00 WIB</span>
+                            </li>
+                            <li class="flex justify-between pb-2">
+                                <span>Hari Libur Nasional</span>
+                                <span class="text-accent font-bold">TETAP BUKA</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-100 p-8 rounded-2xl shadow-sm">
+                        <h3 class="font-display text-xl font-bold text-red-800 uppercase mb-4 flex items-center gap-3">
+                            <i class="fas fa-exclamation-triangle"></i> Ketentuan Lapangan
+                        </h3>
+                        <ul class="space-y-2 text-red-700/80 text-sm list-disc pl-5">
+                            <li>Wajib menggunakan sepatu futsal (dilarang menggunakan sepatu pull besi).</li>
+                            <li>Dilarang merokok dan makan di dalam area lapangan (rumput sintetis).</li>
+                            <li>Keterlambatan waktu bermain bukan menjadi tanggung jawab pengelola (waktu tidak diakumulasi).</li>
+                            <li>Menjaga ketertiban dan fasilitas bersama.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-electric font-bold tracking-wider uppercase text-sm mb-2">Kata Mereka</h2>
+                <h3 class="font-display text-4xl font-bold text-navy mb-4 uppercase">Kepercayaan Pelanggan</h3>
+                <p class="text-slate-600 text-lg">Ratusan tim dan komunitas di Palangka Raya telah mempercayakan arena bermain mereka kepada kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative reveal">
+                    <i class="fas fa-quote-right text-4xl text-slate-100 absolute top-4 right-4"></i>
+                    <div class="flex text-accent mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Lapangannya empuk, rumputnya terawat banget nggak bikin lecet kalau jatuh. Langganan main tiap malam Jumat di sini bareng tim kantor."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center font-bold">A</div>
+                        <div>
+                            <h5 class="font-bold text-navy">Andi Pratama</h5>
+                            <p class="text-xs text-slate-500">FC Pemda Palangka Raya</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimoni 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative reveal delay-100">
+                    <i class="fas fa-quote-right text-4xl text-slate-100 absolute top-4 right-4"></i>
+                    <div class="flex text-accent mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Sirkulasi udara bagus, fasilitas ruang ganti dan kamar mandinya bersih banget. Harga sebanding dengan kualitas lapangan yang diberikan."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-electric text-white rounded-full flex items-center justify-center font-bold">B</div>
+                        <div>
+                            <h5 class="font-bold text-navy">Budi Santoso</h5>
+                            <p class="text-xs text-slate-500">Kapten Palangka United</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimoni 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative reveal delay-200">
+                    <i class="fas fa-quote-right text-4xl text-slate-100 absolute top-4 right-4"></i>
+                    <div class="flex text-accent mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Adminnya ramah dan fast respon pas di-chat WA. Kemarin ngadain turnamen antar sekolah di sini pelayanannya juara dan dibantu persiapan."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold">R</div>
+                        <div>
+                            <h5 class="font-bold text-navy">Rian</h5>
+                            <p class="text-xs text-slate-500">Panitia Porseni Sekolah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="font-display text-3xl font-bold text-navy uppercase mb-4">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                <p class="text-slate-600">Info singkat yang mungkin ingin Anda ketahui sebelum bermain.</p>
+            </div>
+
+            <div class="space-y-4 reveal">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-lg bg-slate-50 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-bold text-navy flex justify-between items-center focus:outline-none">
+                        <span>Apakah bisa menyewa bola dan sepatu di lokasi?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6">
+                        <p class="text-slate-600 pb-4">Untuk bola, kami sudah meminjamkan gratis (sesuai paket). Namun untuk sepatu futsal, saat ini kami belum menyewakan. Pemain diwajibkan membawa sepatu futsal sendiri demi kenyamanan dan kebersihan.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-lg bg-slate-50 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-bold text-navy flex justify-between items-center focus:outline-none">
+                        <span>Berapa minimal DP untuk booking jadwal?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6">
+                        <p class="text-slate-600 pb-4">Minimal DP adalah 50% dari total harga sewa. DP bisa ditransfer melalui Rekening Bank atau e-Wallet yang akan diinfokan oleh Admin saat Anda melakukan booking via WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-lg bg-slate-50 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-bold text-navy flex justify-between items-center focus:outline-none">
+                        <span>Jika batal main, apakah DP bisa dikembalikan?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6">
+                        <p class="text-slate-600 pb-4">DP tidak dapat dikembalikan (hangus) jika pembatalan dilakukan pada hari H (kurang dari 24 jam). Jika pembatalan atau perubahan jadwal dilakukan minimal H-1, DP masih bisa dipindahkan ke jadwal lain yang tersedia.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-lg bg-slate-50 overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-bold text-navy flex justify-between items-center focus:outline-none">
+                        <span>Apakah menyediakan penyewaan untuk Turnamen?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content bg-white px-6">
+                        <p class="text-slate-600 pb-4">Sangat bisa! Kami sering menjadi venue turnamen futsal lokal. Silakan hubungi admin kami untuk mendiskusikan paket khusus turnamen, termasuk perizinan, durasi seharian, dan fasilitas tambahan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-0 relative bg-slate-100">
+        <div class="flex flex-col md:flex-row w-full h-[600px] md:h-[500px]">
+            <!-- Kontak Info -->
+            <div class="w-full md:w-1/2 bg-navy text-white p-10 md:p-16 flex flex-col justify-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-electric/10 rounded-full filter blur-[80px]"></div>
+                
+                <div class="relative z-10 reveal">
+                    <h2 class="font-display text-4xl font-bold uppercase mb-6">Lokasi Kami</h2>
+                    <p class="text-gray-300 mb-8 max-w-md">Kunjungi arena kami yang berlokasi strategis di pusat kota Palangka Raya. Mudah diakses dari berbagai rute.</p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Alamat Lengkap</h4>
+                                <p class="text-gray-400 text-sm">Jl. Utama Palangka Raya No. 123, Jekan Raya,<br>Kota Palangka Raya, Kalimantan Tengah 73111</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone-alt text-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">WhatsApp Admin</h4>
+                                <a href="https://wa.me/6289529605601" target="_blank" class="text-gray-400 text-sm hover:text-white transition-colors">0895-2960-5601</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Map Link -->
+                    <a href="https://maps.google.com/?q=Palangka+Raya+Kalimantan+Tengah" target="_blank" class="inline-flex items-center gap-2 bg-white text-navy px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition-colors">
+                        <i class="fas fa-directions"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Maps Panel -->
+            <div class="w-full md:w-1/2 h-full">
+                <!-- Map embed for Palangka Raya -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127533.24278479905!2d113.82199852238479!3d-2.2155799343750516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb25553e1b78f%3A0xa196f7c5e533e4f3!2sPalangka%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                class="w-full h-full border-0" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-light pt-16 pb-8 border-t border-white/10 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6 opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="gambarasset/WIRA Arena Futsal Crest.webp" alt="Logo Wira Arena" class="w-10 h-10 rounded object-cover">
+                        <span class="text-white font-display font-bold text-xl tracking-wide uppercase">Wira Arena</span>
+                    </div>
+                    <p class="text-sm mb-6">Arena futsal modern dan profesional di Palangka Raya. Pilihan tepat untuk penyaluran hobi, pembinaan atlet, dan ajang turnamen.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/solusilokal.id/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@solusilokal.id" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/6289529605601" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#beranda" class="hover:text-accent transition-colors">Beranda</a></li>
+                        <li><a href="#profil" class="hover:text-accent transition-colors">Profil Kami</a></li>
+                        <li><a href="#fasilitas" class="hover:text-accent transition-colors">Fasilitas</a></li>
+                        <li><a href="#harga" class="hover:text-accent transition-colors">Harga Sewa</a></li>
+                        <li><a href="#faq" class="hover:text-accent transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Operasional</h4>
+                    <ul class="space-y-3">
+                        <li><i class="far fa-clock mr-2 text-electric"></i> Senin - Jumat: 08:00 - 23:00</li>
+                        <li><i class="far fa-clock mr-2 text-electric"></i> Sabtu - Minggu: 07:00 - 24:00</li>
+                        <li class="mt-4"><a href="https://wa.me/6289529605601" class="text-accent hover:text-white font-bold">Booking Lapangan Sekarang</a></li>
+                    </ul>
+                </div>
+
+                <!-- Developer/Credit -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Mitra IT</h4>
+                    <p class="text-sm mb-4">Website ini dikembangkan oleh <strong>SolusiLokal</strong>, partner terpercaya untuk digitalisasi bisnis UMKM Anda.</p>
+                    <a href="https://www.solusilokal.id/" target="_blank" class="inline-block px-4 py-2 border border-gray-600 rounded-lg hover:border-accent hover:text-accent transition-colors text-sm">
+                        Kunjungi SolusiLokal <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center text-sm">
+                <p>&copy; 2026 Wira Arena. All rights reserved. | Developed by <a href="https://www.solusilokal.id/" target="_blank" class="text-accent hover:underline">SolusiLokal</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-lg', 'bg-navy/95', 'backdrop-blur-md');
+                    navbar.classList.remove('bg-transparent', 'py-5');
+                    navbar.classList.add('py-3');
+                } else {
+                    navbar.classList.remove('shadow-lg', 'bg-navy/95', 'backdrop-blur-md');
+                    navbar.classList.add('bg-transparent', 'py-5');
+                    navbar.classList.remove('py-3');
+                }
+            });
+            // Trigger scroll event on load to set initial state
+            window.dispatchEvent(new Event('scroll'));
+
+            // Intersection Observer for Reveal Animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Unobserve after revealing to animate only once
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+
+            // FAQ Accordion Logic
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+                    
+                    // Close all other accordions
+                    faqButtons.forEach(otherBtn => {
+                        if (otherBtn !== button) {
+                            const otherContent = otherBtn.nextElementSibling;
+                            const otherIcon = otherBtn.querySelector('i');
+                            otherContent.style.maxHeight = null;
+                            otherContent.style.paddingTop = '0';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle current accordion
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.paddingTop = '0';
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.style.paddingTop = '1rem';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
